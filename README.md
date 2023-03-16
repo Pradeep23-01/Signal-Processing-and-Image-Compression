@@ -1,5 +1,31 @@
 # Signal-Processing-and-Image-Compression
 
+## Signal Processing:
+
+## Denoising Signals:
+Denoising signals involves removing unwanted noise from a signal to improve the quality of the original signal. The presence of noise can cause distortions and unclear signals, which can negatively impact systems that depend on them. One widely used approach to denoising signals is through mean squared error (MSE) estimation, where the noisy signal is compared to an estimate of the original signal, and the average squared difference between them is calculated. The goal is to minimize the MSE to improve the signal quality.
+
+In addition to MSE, signal-to-noise ratio (SNR) is also a critical metric for evaluating the effectiveness of denoising techniques. SNR measures the relative strength of the signal to the noise, and a higher SNR indicates less noise and a stronger signal.
+
+Filters such as the Wiener filter and Kalman filter are popular methods for suppressing noise while retaining useful signal components. To evaluate the performance of different denoising techniques, both MSE and SNR are often used. A successful denoising algorithm should have a low MSE and a high SNR, indicating effective noise reduction while maintaining the quality of the original signal.
+
+## Decision Boundary:
+In the field of machine learning, a primary task is to categorize data points into various groups based on their features. To achieve this, decision boundaries are commonly employed, which segregate data points into distinct regions based on their characteristics.
+
+Suppose there is a dataset of 2D points that follows a Gaussian Mixture Model, meaning it is created from a blend of two Gaussian distributions. To discover the decision boundary between the two Gaussian distributions, different classification algorithms can be used.
+
+- One technique is to use a linear classifier that supposes the decision boundary is a linear function of the input features. Linear classifiers are quick and straightforward, but their effectiveness is limited if the data isn't linearly separable.
+
+- Another method is to use quadratic discriminant analysis (QDA), which presumes that each group has its own covariance matrix. QDA is capable of capturing more complex decision boundaries than linear classifiers, but it requires more data and can be more susceptible to overfitting.
+
+- Bayesian classifiers can also be employed to classify data. These classifiers determine the probability of each group given the input features and select the class with the highest probability. Bayesian classifiers can be effective if the prior probabilities and conditional probabilities are accurate, but may be less accurate if these probabilities are not precisely estimated.
+
+- The k-nearest neighbor (k-NN) algorithm is another classification technique that can be used. k-NN assigns a class label to a data point based on the class labels of its k nearest neighbors. k-NN is straightforward and can work well for small datasets, but its efficacy may be limited for high-dimensional datasets or if the dataset has noisy or irrelevant features.
+
+- Weighted k-NN is a variation of k-NN that gives different weights to the k nearest neighbors based on their distance from the query point. This technique can improve the performance of k-NN by giving more weight to the nearest neighbors and less weight to the farther neighbors.
+
+In summary, different classification techniques, such as linear classifiers, QDA, Bayesian classifiers, k-NN, and weighted k-NN, can be used to determine the decision boundary between 2D Gaussian Mixture data. The choice of classification method is influenced by the nature of the data and performance criteria.
+
 ## Image Compression: 
 Image compression is the process of reducing the size of an image file in order to conserve storage space and facilitate faster transmission over the internet. Two widely-used techniques for image compression are Clustering and Vector Quantization.
 
